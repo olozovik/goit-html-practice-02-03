@@ -100,6 +100,7 @@ section {
 
 .header-contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -108,8 +109,20 @@ section {
 }
 
 .order-btn {
+  display: inline-block;
+  padding: 12px 20px;
+
+  min-width: 160px;
+  height: 40px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+
+  border: 1px solid var(--text-accent);
+  border-radius: 25px;
 }
 
 .header-social {
@@ -220,11 +233,12 @@ section {
 
 .about-container {
   display: flex;
+  padding-left: 77px;
 }
 
 .about-images {
   display: flex;
-  margin-left: 77px;
+  /* margin-left: 77px; */
 }
 
 .about-images-item:first-child {
@@ -271,4 +285,13 @@ section {
 
   font-size: 14px;
   line-height: 1.86;
+}
+
+.about-btn {
+  color: var(--text-black);
+}
+
+.about-btn:hover,
+.about-btn:focus {
+  color: var(--text-accent);
 }
