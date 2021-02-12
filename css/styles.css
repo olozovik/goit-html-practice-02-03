@@ -2,9 +2,10 @@
   --text-white: #ffffff;
   --text-thistl: #9da4bd;
   --text-thistl-trp: rgba(157, 164, 189, 0.6);
-  --text-dark-grey: #555555;
+  --text-grey: #555555;
   --text-black: #303030;
   --text-accent: #ff6c00;
+  --bg-white: #ffffff;
   --bg-white-smoke: #f7f7f7;
 }
 
@@ -37,6 +38,8 @@ h6 {
 
 body {
   font-family: 'Open Sans', sans-serif;
+
+  background-color: var(--bg-white);
 }
 
 .container {
@@ -206,4 +209,66 @@ section {
 
 .slider-btn:first-child {
   margin-right: 26px;
+}
+
+/* About */
+
+.about {
+  padding-top: 157px;
+  padding-bottom: 99px;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-images {
+  display: flex;
+  margin-left: 77px;
+}
+
+.about-images-item:first-child {
+  margin-right: 30px;
+}
+
+.about-content {
+  padding-left: 64px;
+}
+
+.about-subtitle {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.about-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--text-black);
+}
+
+.about-text {
+  margin-bottom: 22px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-grey);
+}
+
+.about-text + .about-text {
+  margin-bottom: 38px;
+
+  font-size: 14px;
+  line-height: 1.86;
 }
