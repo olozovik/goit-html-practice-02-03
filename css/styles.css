@@ -50,6 +50,13 @@ body {
   outline: 3px dotted tomato;
 }
 
+header,
+footer,
+section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 section {
   outline: 3px solid tomato;
 }
@@ -294,4 +301,65 @@ section {
 .about-btn:hover,
 .about-btn:focus {
   color: var(--text-accent);
+}
+
+/* Услуги и цены */
+
+.services {
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  background-color: #27282d;
+}
+
+.services-subtitle {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-thistl-trp);
+}
+
+.services-title {
+  margin-bottom: 44px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--text-white);
+}
+
+.services-table-wrapper {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.services-table {
+  padding: 30px 40px;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-thistl);
+}
+
+.services-table:first-child {
+  background-color: #191b25;
+}
+
+.services-table:nth-child(2) {
+  background-color: #0d0f16;
+}
+
+.services-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.services-btn {
+  color: var(--text-white);
 }
