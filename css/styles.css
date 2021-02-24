@@ -363,3 +363,121 @@ section {
 .services-btn {
   color: var(--text-white);
 }
+
+/* Почему мы */
+
+.why {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.why-container {
+  padding-left: 155px;
+  padding-right: 125px;
+  display: flex;
+}
+
+.why-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* max-width: 370px; */
+  flex: 0 0 50%;
+}
+
+.why-item {
+  padding: 20px 20px;
+  flex-basis: 170px;
+  /* flex-basis: calc(100% / 2 - 30px); */
+  background-color: var(--bg-white-smoke);
+  text-align: center;
+}
+
+.why-item:nth-child(-n + 2) {
+  margin-bottom: 30px;
+}
+
+.why-item:nth-child(2n + 1) {
+  margin-right: 30px;
+  transform: translateY(-9px);
+}
+
+.why-item:nth-child(2n) {
+  transform: translateY(26px);
+}
+
+.why-item-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+
+  color: var(--text-black);
+}
+
+.why-item-quantity span {
+  padding-top: 7px;
+  display: inline-flex;
+  margin-left: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--text-accent);
+}
+
+.why-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  color: var(--text-black);
+}
+
+.why-content {
+  flex: 0 1 50%;
+}
+
+.why-subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.why-subtitle::before {
+  content: '';
+  margin-right: 20px;
+  display: inline-flex;
+  width: 60px;
+  height: 1px;
+  background-color: var(--text-black);
+}
+
+.why-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--text-black);
+}
+
+.why-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-grey);
+}
