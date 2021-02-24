@@ -61,6 +61,12 @@ section {
   outline: 3px solid tomato;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* HEADER */
 
 .header {
@@ -101,7 +107,7 @@ section {
   margin-right: 72px;
 }
 
-.logo-image {
+.logo-svg {
   background-color: var(--bg-white-smoke);
 }
 
@@ -486,4 +492,113 @@ section {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--text-grey);
+}
+
+/* Наши мастера */
+
+.masters {
+  padding: 130px 0;
+
+  background-color: var(--bg-white-smoke);
+}
+
+.masters-subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.masters-subtitle::before {
+  margin-right: 20px;
+
+  content: '';
+  display: inline-flex;
+  width: 60px;
+  height: 1px;
+
+  background-color: var(--text-black);
+}
+
+.masters-title {
+  margin-bottom: 44px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--text-black);
+}
+
+.masters-list {
+  margin-left: -30px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.masters-item {
+  margin-left: 30px;
+
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.masters-thumb {
+  height: 370px;
+}
+
+.masters-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.masters-info {
+  padding: 30px 82px 0 82px;
+
+  text-align: center;
+}
+
+.masters-name {
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: var(--text-black);
+}
+
+.masters-position {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+
+  color: var(--text-accent);
+}
+
+.masters-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.masters-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: var(--bg-white);
+}
+
+.masters-social-link:hover {
+  fill: var(--text-accent);
 }

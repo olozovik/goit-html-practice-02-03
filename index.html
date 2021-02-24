@@ -17,9 +17,12 @@
       <div class="container header-container">
         <div class="header-top">
           <nav class="header-nav">
-            <a class="logo-link" href="./index.html"
-              ><img class="logo-image" src="./images/logo.svg" alt="Логотип"
-            /></a>
+            <a class="logo-link" href="./index.html">
+              <!-- <img class="logo-image" src="./images/logo.svg" alt="Логотип"       /> -->
+              <svg class="logo-svg" width="69" height="55">
+                <use href="./images/icons.svg#logo"></use>
+              </svg>
+            </a>
             <ul class="menu">
               <li class="menu-item">
                 <a class="menu-link" href="">О нас</a>
@@ -209,49 +212,144 @@
         </div>
       </section>
 
-      <section id="masters">
-        <p>для настоящих ценителей атмосферы</p>
-        <h2>Наши мастера</h2>
-        <ul>
-          <li>
-            <img src="./images/masters/john.jpg" alt="John Smith" width="370" />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
-            <ul>
-              <li><a href="https://www.instagram.com/">Instagram</a></li>
-              <li><a href="https://twitter.com/">Twitter</a></li>
-              <li><a href="https://www.facebook.com/">Facebook</a></li>
-              <li><a href="https://www.linkedin.com/">Linkedin</a></li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/masters/michele.jpg"
-              alt="Michele Doe"
-              width="370"
-            />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
-            <ul>
-              <li><a href="https://www.instagram.com/">Instagram</a></li>
-              <li><a href="https://twitter.com/">Twitter</a></li>
-              <li><a href="https://www.facebook.com/">Facebook</a></li>
-              <li><a href="https://www.linkedin.com/">Linkedin</a></li>
-            </ul>
-          </li>
-          <li>
-            <img src="./images/masters/alan.jpg" alt="Alan Black" width="370" />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-            <ul>
-              <li><a href="https://www.instagram.com/">Instagram</a></li>
-              <li><a href="https://twitter.com/">Twitter</a></li>
-              <li><a href="https://www.facebook.com/">Facebook</a></li>
-              <li><a href="https://www.linkedin.com/">Linkedin</a></li>
-            </ul>
-          </li>
-        </ul>
+      <section class="masters">
+        <div class="container">
+          <p class="masters-subtitle">для настоящих ценителей атмосферы</p>
+          <h2 class="masters-title">Наши мастера</h2>
+          <ul class="masters-list">
+            <li class="masters-item">
+              <div class="masters-thumb">
+                <img
+                  src="./images/masters/john.jpg"
+                  alt="John Smith"
+                  width="370"
+                />
+              </div>
+              <div class="masters-info">
+                <h3 class="masters-name">John Smith</h3>
+                <p class="masters-position">Extreme Barber</p>
+                <ul class="masters-social-list">
+                  <li class="masters-social-item">
+                    <a href="https://instagram.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="masters-social-item">
+                    <a href="https://twitter.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="masters-social-item">
+                    <a href="https://facebook.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="masters-social-item">
+                    <a href="https://linkedin.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="masters-item">
+              <div class="masters-thumb">
+                <img
+                  src="./images/masters/michele.jpg"
+                  alt="Michele Doe"
+                  width="370"
+                />
+              </div>
+              <div class="masters-info">
+                <h3 class="masters-name">Michele Doe</h3>
+                <p class="masters-position">Extreme Barber</p>
+                <ul class="masters-social-list">
+                  <li class="masters-social-item">
+                    <a href="https://instagram.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="masters-social-item">
+                    <a href="https://twitter.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="masters-social-item">
+                    <a href="https://facebook.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="masters-social-item">
+                    <a href="https://linkedin.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="masters-item">
+              <div class="masters-thumb">
+                <img
+                  src="./images/masters/alan.jpg"
+                  alt="Alan Black"
+                  width="370"
+                />
+              </div>
+              <div class="masters-info">
+                <h3 class="masters-name">Alan Black</h3>
+                <p class="masters-position">Extreme Barber</p>
+                <ul class="masters-social-list">
+                  <li class="masters-social-item">
+                    <a href="https://instagram.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="masters-social-item">
+                    <a href="https://twitter.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="masters-social-item">
+                    <a href="https://facebook.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="masters-social-item">
+                    <a href="https://linkedin.com" class="masters-social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
+
       <section>
         <p>На латинском языке “барба” означает “борода”</p>
         <ul>
@@ -285,6 +383,7 @@
           </li>
         </ul>
       </section>
+
       <section id="booking">
         <h2>Онлайн-запись</h2>
         <form action="#">
