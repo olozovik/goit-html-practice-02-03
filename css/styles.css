@@ -116,10 +116,10 @@ section {
 }
 
 .order-btn {
-  display: inline-block;
-  padding: 12px 20px;
+  display: block;
+  padding: 12px 18px;
 
-  min-width: 160px;
+  width: 160px;
   height: 40px;
 
   font-weight: 600;
@@ -355,13 +355,19 @@ section {
   background-color: #0d0f16;
 }
 
-.services-btn-wrapper {
+/* .services-btn-wrapper {
   display: flex;
   justify-content: center;
-}
+} */
 
 .services-btn {
+  margin: 0 auto;
   color: var(--text-white);
+}
+
+.services-btn:hover,
+.services-btn:focus {
+  color: var(--text-accent);
 }
 
 /* Почему мы */
