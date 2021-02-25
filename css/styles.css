@@ -61,7 +61,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 
-  /* outline: 3px dotted tomato; */
+  outline: 3px dotted tomato;
 }
 
 /* header,
@@ -79,6 +79,16 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+table,
+tbody,
+thead,
+tfoot,
+tr,
+td {
+  margin: 0;
+  padding: 0;
 }
 
 /* HEADER */
@@ -423,6 +433,8 @@ img {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--text-thistl);
+
+  flex-basis: calc(100% / 2);
 }
 
 .services-table:first-child {
@@ -433,10 +445,19 @@ img {
   background-color: #0d0f16;
 }
 
-/* .services-btn-wrapper {
+.services-table td {
+  padding: 15px 0;
+}
+
+.services-table-price {
+  text-align: right;
+}
+
+.services-table-service {
   display: flex;
-  justify-content: center;
-} */
+
+  align-items: baseline;
+}
 
 .services-btn {
   margin: 0 auto;
